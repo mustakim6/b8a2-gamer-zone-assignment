@@ -77,8 +77,8 @@ nav {
 .banner {
     display: flex;
     justify-content: space-between;
-    width: 56.3125rem;
-    height: 33.75rem;
+    height:450px ;
+    margin:60px 70px;
 }
 
 .banner-elements {
@@ -149,8 +149,8 @@ nav {
 }
 
 .banner img {
-    width: 63rem;
-    height: 29rem;
+    width: 350px;
+    height: 450px;
     margin-left: 6.5rem;
     margin-right: 67rem;
     background: #FFF;
@@ -160,7 +160,7 @@ nav {
 
 .banner-2 {
     display: flex;
-    padding: 0 7rem;
+    padding: 0 140px;
     justify-content: space-between;
     margin: 6px 30px;
 
@@ -224,7 +224,7 @@ nav {
 
 .online-game {
     text-align: center;
-    margin: 6px 0;
+    margin: 16px 0;
 }
 
 .online-game-title {
@@ -504,4 +504,42 @@ nav {
     font-size: 13px;
     /* margin: ; */
     font-weight: 100;
+}
+
+
+/*for  mobile  screen */
+
+@media screen and (max-width:576px) {
+
+    nav,
+    .list,
+    .icons,
+    .banner,
+    .banner-2,
+    .cards-container,
+    .play-method,
+    .experience,
+    .service,
+    .privacy
+    {
+
+        flex-direction:column;
+    
+    } 
+
+    .banner,
+    .banner-2,
+    .cards-container,
+    .play-method,
+    .experience,
+    .service,
+    .privacy{
+
+       
+        padding: 100px 0;
+    }
+
+    
+
+
 }

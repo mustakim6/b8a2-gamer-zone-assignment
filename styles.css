@@ -162,7 +162,7 @@ nav {
     display: flex;
     padding: 0 7rem;
     justify-content: space-between;
-
+    margin: 6px 30px;
 
 }
 
@@ -225,7 +225,6 @@ nav {
 .online-game {
     text-align: center;
     margin: 6px 0;
-
 }
 
 .online-game-title {
@@ -255,8 +254,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 19px;
-    /* border: 2px solid red; */
-    margin-bottom:28px;
+    margin-bottom: 28px;
 }
 
 .card {
@@ -269,9 +267,241 @@ nav {
     height: 300px;
 }
 
-.card-stats{
+.card i{
+    font-size: 2rem;
+    position:relative;
+    bottom:160px;
+    left:120px;
+}
+
+.card i:hover,.card i:focus-within
+{
+      box-shadow: 0 0 0 95px black;
+}
+
+
+.card-stats {
     color: #534C64;
     font-size: 13px;
     font-weight: 500;
 
+}
+
+/* play instantly styles */
+
+.play-method {
+    display: flex;
+    align-items: center;
+    max-width: 1040px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+
+.play-stats {
+    width: 400px;
+    text-align: right;
+    margin-right: 160px;
+
+}
+
+.play-title {
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.instantly {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-description {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.play-img {
+    padding-left: 90px;
+    height: 400px;
+}
+
+.img-1 {
+    width: 390px;
+    height: 480px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-2 {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    bottom: 200px;
+    right: 105px;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+}
+
+/* career styles start */
+
+.section-career {
+    background-color: #F948B2;
+    margin-top: 80px;
+    padding: 30px 100px;
+    display: flex;
+    height: 400px;
+}
+
+.career-img {
+    width: 380px;
+    height: 450px;
+}
+
+
+
+.career-title {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 650;
+
+}
+
+.career-description {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+
+}
+
+.experience ul li {
+    list-style: none;
+}
+
+.place {
+    text-align: right;
+}
+
+.career-btn {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    border: 0;
+    background: #FFF;
+    color: #FF42A5;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* games styles start */
+
+.games {
+    height: 300px;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.games-names-1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: #0B0223;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+.games-names-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 0.3fr);
+    margin-left: 50px;
+    color: #0B0223;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.game:hover{
+
+    border:2px solid #F948B2;
+    border-radius: 45px;
+    text-align: center;
+}
+
+/* foot styles */
+
+.footer {
+    background: #0B0223;
+    padding: 60px 0;
+}
+
+.amr {
+    color: #FFF;
+}
+
+.service li {
+    list-style: none;
+    margin-right: 36px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon {
+     list-style: none;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    padding-right: 200px;
+
+}
+
+.icon i {
+    
+    margin-right: 40px;
+}
+
+.privacy {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.privacy li {
+    margin: 15px 0;
+    padding-right: 30px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.footer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 13px;
+    /* margin: ; */
+    font-weight: 100;
 }
